@@ -334,7 +334,7 @@ class RanobesPlugin implements Plugin.PluginBase {
     parser.write(html);
     parser.end();
     novel.genres = genreArray.join(', ');
-    novel.totalPages = Math.ceil((maxChapters || 1) / 25);
+    novel.totalPages = Math.ceil((maxChapters || 1) / 100);
     novel.chapters = chapters;
 
     if (novel.chapters[0].path) {
